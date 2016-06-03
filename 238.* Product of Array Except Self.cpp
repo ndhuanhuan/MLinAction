@@ -1,5 +1,5 @@
 // Leetcode.cpp : Defines the entry point for the console application.
-//
+//Hard to bug free.
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
