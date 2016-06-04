@@ -9,6 +9,7 @@
 class Solution {
 public:
 	ListNode* reverseList(ListNode* head) {
+	    if (head==NULL || head->next==NULL) return head;
 		ListNode* dummy = new ListNode(0);
 		dummy->next = head;
 		while (dummy->next) 
