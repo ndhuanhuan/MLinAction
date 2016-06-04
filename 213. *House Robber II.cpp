@@ -1,5 +1,5 @@
 
-
+// Did not bug free. Debuged for a while.
 
 // Leetcode.cpp : Defines the entry point for the console application.
 //
