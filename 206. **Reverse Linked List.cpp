@@ -1,5 +1,5 @@
 // Leetcode.cpp : Defines the entry point for the console application.
-//
+//http://yucoding.blogspot.com/2015/06/leetcode-question-reverse-linked-list.html
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
