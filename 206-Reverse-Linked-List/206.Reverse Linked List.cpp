@@ -11,7 +11,6 @@ public:
 	ListNode* reverseList(ListNode* head) {
 		ListNode* dummy = new ListNode(0);
 		dummy->next = head;
-		dummy = dummy->next;
 		while (dummy->next) 
 		{
 			dummy->next->next = dummy;
