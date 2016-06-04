@@ -8,19 +8,21 @@
  */
 class Solution {
 public:
+class Solution {
+public:
 	ListNode* reverseList(ListNode* head) {
-	    if (head==NULL || head->next==NULL) return head;
-		ListNode* dummy = new ListNode(0);
-		dummy->next = head;
-		while (dummy->next) 
+		if (head == NULL || head->next == NULL) return head;
+		//ListNode* dummy = new ListNode(0);
+		//dummy->next = head;
+		ListNode *h = NULL, *p = NULL;
+		while (head)
 		{
-		    auto tmp = dummy->next->next;
-		    auto tmp2 =dummy->next;
-			dummy->next->next = dummy;
-			dummy->next = tmp;
-			dummy = tmp2;
+			p = head->next;
+			head->next = h;
+			h = head;
+			head = p;
 		}
-		head->next = NULL;
-		return dummy->next;
+		return h;
 	}
+};
 };
