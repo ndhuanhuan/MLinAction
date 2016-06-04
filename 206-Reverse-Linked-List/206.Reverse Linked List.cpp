@@ -15,9 +15,10 @@ public:
 		while (dummy->next) 
 		{
 		    auto tmp = dummy->next->next;
+		    auto tmp2 =dummy->next;
 			dummy->next->next = dummy;
 			dummy->next = tmp;
-			dummy = dummy->next;
+			dummy = tmp2;
 		}
 		head->next = NULL;
 		return dummy->next;
