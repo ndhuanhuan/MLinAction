@@ -18,6 +18,6 @@ public:
 			dummy = dummy->next;
 		}
 		head->next = NULL;
-		return dummy;
+		return dummy->next;
 	}
 };
