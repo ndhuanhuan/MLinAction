@@ -14,7 +14,9 @@ public:
 		dummy->next = head;
 		while (dummy->next) 
 		{
+		    auto tmp = dummy->next->next;
 			dummy->next->next = dummy;
+			dummy->next = tmp;
 			dummy = dummy->next;
 		}
 		head->next = NULL;
