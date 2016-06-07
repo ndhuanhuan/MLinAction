@@ -1,5 +1,5 @@
 //http://bangbingsyb.blogspot.com/2014/11/leetcode-decode-ways.html
-
+//http://coderuo.blogspot.com/2013/04/leetcode-decode-ways-in-c.html
 #include <iostream>
 #include <vector>
 #include <algorithm>
