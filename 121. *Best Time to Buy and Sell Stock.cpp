@@ -1,5 +1,4 @@
-//
-http://bangbingsyb.blogspot.com/2014/11/leetcode-best-time-to-buy-and-sell.html
+//http://bangbingsyb.blogspot.com/2014/11/leetcode-best-time-to-buy-and-sell.html
 
 #include <iostream>
 #include <vector>
