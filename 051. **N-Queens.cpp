@@ -1,3 +1,4 @@
+//http://bangbingsyb.blogspot.com/2014/11/leetcode-n-queens-i-ii.html
 class Solution {
 public:
     vector<vector<string> > solveNQueens(int n) {
