@@ -49,3 +49,33 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
+
+
+//http://www.cnblogs.com/TenosDoIt/p/3451920.html
+class Solution {
+public:
+    int numDecodings(string s) {
+        // IMPORTANT: Please reset any member data you declared, as
+        // the same Solution instance will be reused for each test case.
+        //注意处理字符串中字符为0的情况
+        int len = s.size();
+        if(len == 0)return 0;
+        int dp[len+1];//dp[i]表示s[0...i-1]的解码方法数目
+        dp[0] = 1;
+        if(s[0] != '0')dp[1] = 1;
+        else dp[1] = 0;
+        for(int i = 2; i <= len; i++)
+        {
+            if(s[i-1] != '0')
+                dp[i] = dp[i-1];
+            else dp[i] = 0;
+            if(s[i-2] == '1' || (s[i-2] == '2' && s[i-1] <= '6'))
+                dp[i] += dp[i-2];
+        }
+        return dp[len];
+    }
+};
+
+//比如112045 当 i=4时候代表1120 有多少种解法， 相当于11+20的解法加上112+0的解法，由于0无法解析成字母所以112+0
+//11+20就是dp[i-2], 112+0 就是dp[i-1]. 所以说，加不加dp[i-1]取决于s[i-1]是否为0.
