@@ -1,6 +1,19 @@
 //curr->next->random = curr->random->next;
 //https://yanjianwei.gitbooks.io/algorithm-reading/content/linked_list/copy_list_with_random_pointer.html
 
+|--------------------------|
+|                          v
+1  --> 1' --> 2 --> 2' --> 3 --> 3' --> 4 --> 4'
+       |                   ^
+       |-------------------|
+       
+
+|--------------------------|
+|                          v
+1  --> 1' --> 2 --> 2' --> 3 --> 3' --> 4 --> 4'
+       |                         ^
+       |-------------------------|
+
 
 class Solution {
 public:
