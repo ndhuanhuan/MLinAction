@@ -1,5 +1,5 @@
 // Leetcode.cpp : Defines the entry point for the console application.
-//
+//https://www.hrwhisper.me/leetcode-count-primes/
 
 
 #include "stdafx.h"
