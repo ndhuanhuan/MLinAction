@@ -57,3 +57,18 @@ int main()
 			 
 
 }
+
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        ListNode * newhead = new ListNode(0);
+        while (head){
+            ListNode * tmp = newhead->next;
+            newhead->next = head;
+            head = head->next;
+            newhead->next->next = tmp;
+        }
+        return newhead->next;
+         
+    }
+};
