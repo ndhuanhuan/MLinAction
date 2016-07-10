@@ -1,3 +1,4 @@
+//https://segmentfault.com/a/1190000003509399
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
