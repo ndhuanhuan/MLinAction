@@ -2,6 +2,7 @@
 //http://bangbingsyb.blogspot.com/2014/11/leetcode-permutations-i-ii.html
 //http://fisherlei.blogspot.com/2012/12/leetcode-permutations-ii.html
 //相等的时候则前面的数必须使用了，自己才能使用，这样就不会产生重复的排列了
+// like 1,1,1,2,3,4 we must use first '1' then we can use second '1' to eliminate duplicate.
 
 class Solution {
 public:
