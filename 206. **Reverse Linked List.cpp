@@ -62,7 +62,7 @@ class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
         ListNode * newhead = new ListNode(0);
-        while (head){
+        while (head){  //tmp is always one node prev head
             ListNode * tmp = newhead->next;
             newhead->next = head;
             head = head->next;
