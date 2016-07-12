@@ -29,7 +29,7 @@ public:
         {
             if(curr->random)
             {
-                curr->next->random = curr->random->next;
+                curr->next->random = curr->random->next;  //cur->random->next is the random node that you copied
             }
         }
 
