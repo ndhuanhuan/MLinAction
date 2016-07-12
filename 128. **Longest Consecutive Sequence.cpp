@@ -76,7 +76,7 @@ public:
             if(m.find(i) == m.end()){
                 m[i] = idx;
                 if(m.find(i - 1) != m.end()){
-                    unionFind(idx, m[i - 1]);
+                    unionFind(idx, m[i - 1]); //union two indexes
                 }
                 if(m.find(i + 1) != m.end()){
                     unionFind(idx, m[i + 1]);
