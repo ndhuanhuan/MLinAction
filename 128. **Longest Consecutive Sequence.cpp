@@ -54,7 +54,7 @@ public:
     void unionFind(int a, int b){
         int pa = find(a);
         int pb = find(b);
-        if(pa == pb){
+        if(pa == pb){ //if already union, return
             return;
         }
         p[pa] = pb;
