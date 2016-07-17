@@ -11,7 +11,7 @@ public:
 
 	void dfs(const string &digits, size_t cur, string path, vector<string> &result) 
 	{
-		if (cur == digits.size()) 
+		if (cur == digits.length()) 
 		{
 			result.push_back(path);
 			return;
