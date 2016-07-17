@@ -18,6 +18,6 @@ public:
 					stk.pop();
 			}
 		}
-		return stk.empty();
+		return stk.empty();     //easy to write a bug.
 	}
 };
