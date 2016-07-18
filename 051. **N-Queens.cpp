@@ -29,7 +29,7 @@ public:
     }
     
     bool validPos(vector<int> &col, int irow, int icol) {
-        if(irow<col.size()) return false;
+        //if(irow<col.size()) return false;
         for(int i=0; i<col.size(); i++) {
             if(icol==col[i] || abs(irow-i)==abs(icol-col[i]))
                 return false;
