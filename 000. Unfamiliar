@@ -37,3 +37,6 @@
 *300
 *323
 365
+
+
+auto pos = find(path.begin(), path.end(), i);
