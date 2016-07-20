@@ -17,7 +17,7 @@ public:
     void connect(TreeLinkNode *root) {
         while(root)
         {
-            TreeLinkNode* next = NULL, *prev=NULL;
+            TreeLinkNode* next = NULL, *prev=NULL; //reset each time go to next level
             for(;root;root=root->next)
             {
                 if(!next)
