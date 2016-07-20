@@ -18,7 +18,7 @@
 116 second round fails.
 *117 TreeLinkNode * next = nullptr;  TreeLinkNode * prev = nullptr;  
 121
-124 注意这里并不需要PS2(x->left) 以及 PS2(x->right) 因为子节点的2型path无法和父节点构成新的path。
+124 注意这里并不需要PS2(x->left) 以及 PS2(x->right) 因为子节点的2型path无法和父节点构成新的path。  second round fails.
 125 prev(s.end()); !isalnum(*left) tolower(*left) != tolower(*right)
 128
 133
