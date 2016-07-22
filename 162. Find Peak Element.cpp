@@ -42,7 +42,7 @@ public:
 			// If middle element is not peak and its left neighbor is greater than it
 			// then left half must have a peak element
 			if (mid >0 && num[mid - 1] > num[mid]) {
-				high = mid - 1;
+				high = mid ;
 				// If middle element is not peak and its right neighbor is greater than it
 				// then right half must have a peak element
 			}
