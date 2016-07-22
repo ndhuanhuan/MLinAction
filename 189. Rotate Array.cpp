@@ -19,18 +19,19 @@ using namespace std;
 
 class Solution {
 public:
-	void rotate(vector<int>& nums, int k) {
-		int n = nums.size();
-		if ((k <= 0) || (n == 0)) return;
-		k %= n;
-		reverse2(nums, 0, n - k - 1);
-		reverse2(nums, n - k, n - 1);
-		reverse2(nums, 0, n - 1);
-	}
-
-	void reverse2(vector<int>& nums, int start, int end)
-	{
-		int temp;
+    void rotate(vector<int>& nums, int k) 
+    {
+        int n = nums.size();
+        if((k<=0)||(n==0)) return;
+        k %= n;
+        reverse2(nums,0,n-1);
+        reverse2(nums,0,k-1);
+        reverse2(nums,k,n-1);
+    }
+    
+    void reverse2(vector<int>& nums, int start, int end)
+    {
+        int temp;
 		while (start < end)
 		{
 			int temp = nums[start];
@@ -39,8 +40,7 @@ public:
 			start++;
 			end--;
 		}
-
-	}
+    }
 };
 int main()
 {
