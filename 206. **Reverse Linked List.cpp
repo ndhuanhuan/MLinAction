@@ -1,5 +1,22 @@
 // Leetcode.cpp : Defines the entry point for the console application.
 //http://yucoding.blogspot.com/2015/06/leetcode-question-reverse-linked-list.html
+//https://leetcode.com/articles/reverse-linked-list/
+
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(head==NULL||head->next==NULL) return head;
+        ListNode *p = reverseList(head->next);
+        head->next->next = head;
+        head->next = NULL;
+        return p;
+    }
+};
+
+
+
+
+
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
