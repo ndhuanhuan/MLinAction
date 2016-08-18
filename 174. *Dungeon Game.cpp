@@ -6,7 +6,7 @@ public:
 		dungeon[m - 1][n - 1] = max(0 - dungeon[m - 1][n - 1], 0);
 		for (int i = m - 2; i >= 0; i--) 
 		{
-			dungeon[i][n - 1] = max(dungeon[i + 1][n - 1] - dungeon[i][n - 1],0);
+			dungeon[i][n - 1] = max(dungeon[i + 1][n - 1] - dungeon[i][n - 1],0);   //Typically you don't need to max(,), but hero should not die, you should make sure hero won't die.
 		}
 		for (int j = n - 2; j >= 0; j--)
 		{
