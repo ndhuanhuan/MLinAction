@@ -18,3 +18,49 @@ public:
 		traverse(root->right, level + 1, result, !left_to_right);
 	}
 };
+
+
+
+2016/11/22 
+class Solution {
+public:
+    vector<vector<int>> zigzagLevelOrder(TreeNode* root) {
+        
+        vector<vector<int>> res;
+        if(!root) return res;
+        queue<TreeNode*> q;
+        q.push(root);
+        bool isLeftToRight=true;
+        while(!q.empty())
+        {
+                vector<int> oneLevel;
+                int size = q.size();
+                for(int i=0;i<size;i++)
+                {
+                     TreeNode* node = q.front();
+                     q.pop();
+                     if(isLeftToRight)
+                     {
+                         oneLevel.push_back(node->val);
+                          if (node->left) q.push(node->left);
+                          if (node->right) q.push(node->right);
+                     }
+                    else
+                    {
+                         oneLevel.insert(oneLevel.begin(),node->val);
+                          if (node->left) q.push(node->left);
+                          if (node->right) q.push(node->right);
+                    }
+                }
+                 res.push_back(oneLevel);
+                isLeftToRight=!isLeftToRight;
+                
+        }
+                
+            
+           
+        
+        return res;
+        
+    }
+};
