@@ -54,3 +54,27 @@ int main(int argc, char *argv[])
 
 	return 0;
 }
+
+
+
+class Solution {
+public:
+void reverseWords(string &s) {
+    reverse(s.begin(), s.end());
+    for(int i = 0; i < s.length();)
+    {
+        while(s[i] == ' ')
+           s.erase(i, 1);
+        int j = i+1;
+        while(j < s.length() && s[j] != ' ')
+            ++j;
+        reverse(s.begin()+i, s.begin()+j);
+        i = j+1;
+    }
+    
+    while(s.length() > 0 && s[s.length()-1] == ' ')
+        s.erase(s.length()-1, 1);
+        
+    return;
+}
+};
